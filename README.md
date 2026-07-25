@@ -1,3 +1,4 @@
+<img width="1080" height="720" alt="ZCUFtJ8_CobLXOaJ-jnOThQYJVCwCRNMgK_5uulWmwbdn-GVHx8TvQwes9dZilcmuLnrgODx6spoX9LLsL0O3V-zP59V-5UuGg6bnpmAmZjusUCERA2eiov3Txn-Xo7EWR6sc-TVF3pCO_fjYBfIM6ttCWG7IA5M4DrJ13BcywSuz5FB5sP66QQ3_SqjMwJ_" src="https://github.com/user-attachments/assets/16aae60c-9afb-4941-81f5-9da118eb01a2" />
 # Aim:	Comprehensive Report on the Fundamentals of Generative AI and Large Language Models (LLMs)
 Experiment:
 Develop a comprehensive report for the following exercises:
@@ -123,6 +124,9 @@ When a user enters a prompt, the AI predicts the most probable next token repeat
 # 5. Types of Generative AI Models
 
 Generative AI includes several model architectures designed for different tasks.
+
+<img width="1080" height="720" alt="ZCUFtJ8_CobLXOaJ-jnOThQYJVCwCRNMgK_5uulWmwbdn-GVHx8TvQwes9dZilcmuLnrgODx6spoX9LLsL0O3V-zP59V-5UuGg6bnpmAmZjusUCERA2eiov3Txn-Xo7EWR6sc-TVF3pCO_fjYBfIM6ttCWG7IA5M4DrJ13BcywSuz5FB5sP66QQ3_SqjMwJ_" src="https://github.com/user-attachments/assets/f25aafb7-42dd-47c7-a966-3fdb7b99a494" />
+
 
 ### 1. Transformer Models
 
