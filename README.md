@@ -352,6 +352,302 @@ Generative AI represents a major advancement in artificial intelligence by enabl
 7. Stanford CS224N Notes
 8. Microsoft Learn – Generative AI
 
+##
 
+# Prompt 2: Generative AI Architectures (Transformer and Other Models)
+
+## Prompt
+
+**Explain the major architectures used in Generative AI with a focus on Transformer architecture. Compare Transformers with GANs, Variational Autoencoders (VAEs), Diffusion Models, and Recurrent Neural Networks (RNNs). Explain how Transformers work, including attention mechanisms, encoder-decoder structure, and why they are widely used in modern AI systems.**
+
+---
+
+# 1. Introduction
+
+Generative AI architectures are the backbone of modern artificial intelligence systems. An architecture defines how an AI model processes data, learns patterns, and generates outputs. Over the years, several architectures have been developed, including Recurrent Neural Networks (RNNs), Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), Diffusion Models, and Transformers.
+
+Among these, the Transformer architecture has become the most influential because it enables models to process massive datasets efficiently and generate highly accurate, context-aware outputs. Today, most leading AI models such as ChatGPT, Gemini, Claude, and Llama are based on Transformer technology.
+
+---
+
+
+# 2. Evolution of Generative AI Architectures
+
+The development of AI architectures has progressed significantly over the past few decades.
+
+### Rule-Based Systems
+- Used manually written rules.
+- Could not learn from data.
+
+↓
+
+### Recurrent Neural Networks (RNNs)
+- Introduced sequence learning.
+- Used for text and speech processing.
+- Suffered from vanishing gradient problems.
+
+↓
+
+### Long Short-Term Memory (LSTM)
+- Improved RNN performance.
+- Better handling of long-term dependencies.
+
+↓
+
+### GANs (2014)
+- Introduced adversarial learning.
+- Excellent for image generation.
+
+↓
+
+### Variational Autoencoders (VAEs)
+- Learned compressed latent representations.
+- Useful for image reconstruction and anomaly detection.
+
+↓
+
+### Transformers (2017)
+- Introduced self-attention.
+- Enabled large-scale language understanding.
+
+↓
+
+### Diffusion Models
+- Produce high-quality images.
+- Used in Stable Diffusion and DALL·E.
+
+---
+
+# 3. Transformer Architecture
+
+The Transformer architecture was introduced in the research paper **"Attention Is All You Need"** (2017). Unlike RNNs, Transformers process all input tokens simultaneously using self-attention, making training faster and more efficient.
+
+<img width="824" height="690" alt="MqR3Ds4qgjeqQZgIEC4UCqdxdFSdKwC0r1WQvOfooFkzCJW7qpBGrlHMQKyUV_saLg5CMykFpZK0138MxSbvGQoRQXrPAFJtf4ieymX-K7haYCF7-wfSX7OEbfVGkVgYY8jWcmFWefF5LHlnxtcvHpnUu_G3IHI37Di-2WQTv67M9MdZoeu_YfhBI6bhDOpK" src="https://github.com/user-attachments/assets/7042fc40-7bcc-4e88-a1bd-2579dfa1b1a7" />
+
+## Main Components
+
+### Input Embedding
+Converts words into numerical vectors that the model can understand.
+
+### Positional Encoding
+Adds information about the order of words because Transformers process all tokens in parallel.
+
+### Encoder
+Extracts meaningful features from the input using multiple attention layers.
+
+### Decoder
+Generates the output sequence one token at a time using information from the encoder.
+
+### Self-Attention
+Determins which words in a sentence are most relevant to each other.
+
+### Feed Forward Network
+Processes attention outputs using neural network layers.
+
+### Layer Normalization
+Improves training stability and convergence.
+
+### Output Layer
+Predicts the most probable next word or token.
+
+> **Figure 1: Transformer Architecture**
+
+```
+Input Sentence
+      │
+Embedding Layer
+      │
+Positional Encoding
+      │
+┌────────────────────┐
+│     Encoder        │
+│ Self Attention     │
+│ Feed Forward       │
+└────────────────────┘
+      │
+Context Representation
+      │
+┌────────────────────┐
+│     Decoder        │
+│ Self Attention     │
+│ Cross Attention    │
+│ Feed Forward       │
+└────────────────────┘
+      │
+Generated Output
+```
+
+---
+
+# 4. Attention Mechanism
+
+The attention mechanism is the most important innovation in Transformer models. It allows the model to focus on the most relevant words while generating a response.
+
+### Types of Attention
+
+#### Self-Attention
+Each word pays attention to every other word in the sentence.
+
+#### Cross-Attention
+The decoder attends to the encoder output during text generation.
+
+#### Multi-Head Attention
+Multiple attention mechanisms operate in parallel to capture different relationships.
+
+### Benefits of Attention
+
+- Understands context better.
+- Handles long sentences.
+- Processes data in parallel.
+- Improves translation accuracy.
+- Enables reasoning across long documents.
+
+---
+
+# 5. Other Generative AI Architectures
+
+## 1. Recurrent Neural Networks (RNNs)
+
+### Features
+- Processes sequential data.
+- Remembers previous inputs.
+- Suitable for small text datasets.
+
+### Limitations
+- Slow training.
+- Difficulty handling long sequences.
+
+---
+
+## 2. GANs (Generative Adversarial Networks)
+
+GANs consist of two neural networks:
+
+### Generator
+Creates fake data.
+
+### Discriminator
+Determines whether the generated data is real or fake.
+
+Applications:
+- Face generation
+- Deepfake videos
+- Image enhancement
+
+---
+
+## 3. Variational Autoencoders (VAEs)
+
+VAEs learn compressed latent representations of data and then reconstruct new samples.
+
+Applications:
+- Image reconstruction
+- Medical imaging
+- Data compression
+
+---
+
+## 4. Diffusion Models
+
+Diffusion Models generate images by gradually removing noise from random patterns.
+
+Applications:
+- AI-generated artwork
+- Image editing
+- Product design
+- Content creation
+
+Examples:
+- Stable Diffusion
+- DALL·E
+
+---
+
+# 6. Comparison of Different Architectures
+
+| Architecture | Strengths | Weaknesses | Applications |
+|--------------|-----------|------------|--------------|
+| Transformer | Excellent context understanding, parallel processing | High computational cost | Chatbots, Translation, Coding |
+| GAN | Generates realistic images | Difficult to train | Image generation |
+| VAE | Learns latent representations | Lower image quality | Image reconstruction |
+| Diffusion Model | High-quality image synthesis | Slow generation process | AI Art, Image Editing |
+| RNN/LSTM | Good for sequential data | Cannot handle long contexts efficiently | Speech Recognition, Time Series |
+
+### Why Transformers are Preferred
+
+- Better scalability
+- Parallel processing
+- Improved reasoning
+- Better contextual understanding
+- Supports very large datasets
+- Foundation for modern LLMs
+
+> **Figure 2: Comparison of AI Architectures**
+
+| Architecture | Best Use Case |
+|--------------|---------------|
+| Transformer | Text Generation |
+| GAN | Image Generation |
+| VAE | Compression |
+| Diffusion | AI Art |
+| RNN | Sequential Prediction |
+
+---
+
+# 7. Applications of Transformer Architecture
+
+Transformers have revolutionized artificial intelligence and are used across multiple domains.
+
+### Natural Language Processing
+- Chatbots
+- Translation
+- Summarization
+
+### Software Development
+- Code generation
+- Debugging
+- Documentation
+
+### Healthcare
+- Medical report generation
+- Drug discovery
+
+### Education
+- Personalized tutoring
+- Quiz generation
+
+### Finance
+- Fraud detection
+- Financial analysis
+
+### Cybersecurity
+- Threat detection
+- Malware analysis
+
+### Robotics
+- Human-robot communication
+
+### Scientific Research
+- Literature review
+- Data analysis
+
+---
+
+# 8. Conclusion
+
+Generative AI architectures have evolved from simple rule-based systems to advanced Transformer-based models capable of understanding and generating human-like content. While GANs, VAEs, Diffusion Models, and RNNs each have unique strengths, Transformers have become the dominant architecture due to their self-attention mechanism, scalability, and ability to process long sequences efficiently. Modern AI systems such as ChatGPT, Gemini, Claude, and Llama rely on Transformers to deliver high-quality language understanding and generation. As research continues, these architectures will become more efficient, multimodal, and capable of solving increasingly complex real-world problems.
+
+---
+
+# References
+
+1. Vaswani et al., *Attention Is All You Need* (2017)
+2. OpenAI Documentation
+3. Google AI Documentation
+4. Anthropic Documentation
+5. Hugging Face Transformers
+6. Stanford CS224N
+7. Deep Learning – Ian Goodfellow
+8. Microsoft Learn – Generative AI
 
 # Result
