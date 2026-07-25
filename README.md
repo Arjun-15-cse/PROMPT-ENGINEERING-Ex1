@@ -1677,6 +1677,10 @@ Plaintext
 [ Optimization (Quantization) & API Deployment ]
 
 
+
+# Result:
+
+
 ## Observation Table
 
 
@@ -1702,9 +1706,3 @@ Plaintext
 | Presentation Quality      | **ChatGPT**  | More readable, organized with headings, examples, and clear workflows.                    |
 a
 
-
-
-
-
-
-# Result
