@@ -1548,11 +1548,19 @@ The standard Transformer relies on two main parts. The encoder converts input to
 
 <img width="779" height="599" alt="image" src="https://github.com/user-attachments/assets/5ad32a24-bf30-4968-8b15-1c4858966ea9" />
 
+##
+
 <img width="908" height="610" alt="image" src="https://github.com/user-attachments/assets/66dba6ea-c74c-4bac-9b0a-ba7a482b0deb" />
+
+##
 
 <img width="857" height="676" alt="image" src="https://github.com/user-attachments/assets/0132a602-9a80-4916-803e-6f5cbebb490c" />
 
+##
+
 <img width="875" height="687" alt="image" src="https://github.com/user-attachments/assets/fe0b156b-27ca-48bd-8621-ff5d8241a54d" />
+
+##
 
 Transformers excel in parallel sequential processing. In contrast, GANs pit a generator against a discriminator for image realism; VAEs map data to a latent space for smooth generation; Diffusion models iteratively add and remove noise to create data; and RNNs process data strictly step-by-step,.
 
@@ -1668,6 +1676,17 @@ Plaintext
              v
 [ Optimization (Quantization) & API Deployment ]
 
+
+## Observation Table
+
+
+| Criteria          | ChatGPT            | Gemini             | Observation                                                                                                                                                                                                                                              |
+| ----------------- | ------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Accuracy**      | Excellent (9.5/10) | Excellent (9.7/10) | Both models provide accurate information. Gemini includes slightly more advanced concepts such as vector databases, Mixture of Experts (MoE), KV caching, and scaling laws, while ChatGPT focuses on concepts commonly expected in academic assignments. |
+| **Creativity**    | Excellent (9.5/10) | Very Good (8.8/10) | ChatGPT presents information with structured explanations, examples, workflows, and beginner-friendly language. Gemini uses a more technical and concise style suitable for advanced readers.                                                            |
+| **Hallucination** | Very Low           | Very Low           | Neither response contained obvious factual errors. Both remained consistent with accepted Generative AI concepts. Gemini occasionally uses industry projections that may require external verification if cited.                                         |
+| **Reasoning**     | Excellent (9.6/10) | Excellent (9.8/10) | Gemini demonstrates deeper technical reasoning by discussing scaling hypotheses, architectural trade-offs, RLHF, optimization techniques, and enterprise AI architecture. ChatGPT explains concepts more sequentially and is easier to follow.           |
+| **Speed**         | Very Fast          | Very Fast          | Both models generated responses quickly. Gemini generally produces slightly shorter outputs, which may result in marginally faster response times.                                                                                                       |
 
 
 
