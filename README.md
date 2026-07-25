@@ -1704,5 +1704,4 @@ Plaintext
 | Beginner Friendliness     | **ChatGPT**  | Uses simpler language and detailed explanations with logical flow.                        |
 | Research-Oriented Content | **Gemini**   | Better suited for readers seeking deeper technical insights.                              |
 | Presentation Quality      | **ChatGPT**  | More readable, organized with headings, examples, and clear workflows.                    |
-a
 
