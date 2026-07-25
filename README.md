@@ -1497,7 +1497,7 @@ Large Language Models have revolutionized Artificial Intelligence by enabling ma
 
 ##
 
-### Gemini AI
+# Gemini AI
 
 ## Prompt 1 – Foundational Concepts of Generative AI
 1. Definition & Core Philosophy
