@@ -1713,3 +1713,10 @@ Plaintext
 - **Gemini** delivered more concise responses with greater technical depth and advanced AI concepts.
 - Overall, **ChatGPT is recommended for report writing and learning**, while **Gemini is better for technical research and validating information.**
 
+
+## Result:
+# Result
+
+The comparison showed that both ChatGPT and Gemini generated accurate and reliable responses using identical prompts. ChatGPT was better suited for academic report writing due to its clear structure and detailed explanations, while Gemini provided more concise and technically advanced content.
+
+
